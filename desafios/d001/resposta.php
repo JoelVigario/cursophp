@@ -11,8 +11,8 @@
         <h1>Resultado final</h1>
 
         <?php 
-            $num = $_POST["num"]  ?? false;
-            if ($num != false) {
+            $num = $_POST["num"]  ?? "vazio";
+            if ($num != "vazio") {
                 print "<p>O número escolhido foi <strong>$num</strong></p>";
                 printf("<p>O seu <em>antecessor</em> é %d</p>", $num - 1);
                 printf("<p>O seu <em>sucessor</em> é %d</p>", $num + 1);
@@ -22,7 +22,7 @@
             
         ?>
 
-        <a href="javascript:history.go(-1)"><button>&larr; Voltar</button></a>
+        <button onclick="history.back()">&#x2b05; Voltar</button>
         
     </main>
 </body>
