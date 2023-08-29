@@ -27,7 +27,7 @@
 
                     $padrão = numfmt_create("pt_PT", NumberFormatter::CURRENCY);
 
-                    printf("Seus %s equivalem a %s", numfmt_format_currency($padrão, $val_kz, "EUR"), numfmt_format_currency($padrão, $val_kz / 600, "USD"));
+                    printf("Seus %s equivalem a %s", numfmt_format_currency($padrão, $val_kz, "AOA"), numfmt_format_currency($padrão, $val_kz / 600, "USD"));
 
                 }
             ?>
