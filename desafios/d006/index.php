@@ -8,9 +8,9 @@
 </head>
 <body>
     <?php 
-        $_sal = $_POST['sal'] ?? 0;
+        $_min = 1_380.60;
+        $_sal = $_POST['sal'] ?? $_min;
         $padrão = numfmt_create("pt_PT", NumberFormatter::CURRENCY);
-        $_min = 1380.00;
 
         $res = "Quem recebe um salário de " . numfmt_format_currency($padrão, $_sal, "AOA") . " ganha <strong>" . (intdiv($_sal, $_min)) . " salários mínimos</strong> + " . numfmt_format_currency($padrão, $_sal % $_min, "AOA") . "";
     ?>
