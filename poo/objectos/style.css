@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #13131c;
+    color: white;
+}
+
+main {
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #2d2df9;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: #03039a;
+}
+
+label, input {
+    display: block;
+}
