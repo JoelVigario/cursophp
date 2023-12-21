@@ -13,7 +13,7 @@
 
             print_r($_SESSION['cadernos'][0]);
             $_SESSION['res'] = 'Caderno criado com sucesso!';
-            header('Location: novo.php');
+            header('Location: desktop.php');
         } else {
 
         }

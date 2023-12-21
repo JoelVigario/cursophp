@@ -15,7 +15,7 @@
             <input type="text" name="nome" id="nome" required>
             <label for="totPaginas">Qual é o total de páginas?</label>
             <input type="number" name="totPaginas" id="totPaginas" required min="1">
-            <button>Criar</button>
+            <button class="button">Criar</button>
         </form>
         <p><?php
             echo $_SESSION['res'];
